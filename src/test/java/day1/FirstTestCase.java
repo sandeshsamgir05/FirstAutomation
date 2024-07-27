@@ -11,10 +11,10 @@ public class FirstTestCase {
 		// TODO Auto-generated method stub
 		ChromeDriver driver = new ChromeDriver();
 		
-		driver.get("https://www.opencart.com/");
+		driver.get("https://opencart.com");
 		
 		String act_title = driver.getTitle();
-		if (act_title.equals("OpenCart - Open Source Shopping Cart Solution" ))
+		if (act_title.equals("OpenCart - Open Source Shopping Cart Solution"))
 		{
 			System.out.println("Test Passed");
 		}
