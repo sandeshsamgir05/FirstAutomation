@@ -20,7 +20,10 @@ public class CSSLocaters {
 		
 		//tag class   tag.classname
 		
-		driver.findElement(By.cssSelector("input.search-box-text")).sendKeys("Pant");
+		//driver.findElement(By.cssSelector("input.search-box-text")).sendKeys("Pant");
+		
+		driver.findElement(By.cssSelector("input[placeholder='Search store']")).sendKeys("Kurti");
+		
 		
 		
 	}
