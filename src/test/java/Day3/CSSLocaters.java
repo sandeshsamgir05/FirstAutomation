@@ -22,9 +22,15 @@ public class CSSLocaters {
 		
 		//driver.findElement(By.cssSelector("input.search-box-text")).sendKeys("Pant");
 		
-		driver.findElement(By.cssSelector("input[placeholder='Search store']")).sendKeys("Kurti");
+		//tag attribute   tag.[attribute ='value']
 		
+		//driver.findElement(By.cssSelector("input[placeholder='Search store']")).sendKeys("Kurti");
 		
+		//tag class attribute
+		
+	//	driver.findElement(By.cssSelector(".search-box-text[name='q']")).sendKeys("tshirt");
+		
+		driver.findElement(By.xpath("//input[@id='small-searchterms']")).sendKeys("men");
 		
 	}
 
