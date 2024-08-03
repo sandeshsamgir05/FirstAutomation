@@ -16,7 +16,7 @@ public class ExplicitWaitc {
 
 		WebDriver driver = new ChromeDriver();
 		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		
+		//Explicit wait declaration
 		WebDriverWait mywait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		
 		
@@ -26,9 +26,16 @@ public class ExplicitWaitc {
 		
 		WebElement textusername = mywait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@placeholder='Username']")));
 		
-		textusername.sendKeys("Username");
+		textusername.sendKeys("Admin");
 
 		//driver.findElement(By.xpath("//input[@placeholder='Username']")).sendKeys("admin");
+	WebElement textpwd = mywait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@placeholder='Password']")));
+		
+		textpwd.sendKeys("admin123");
+		
+		WebElement loginb = mywait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@type='submit']")));
+		
+		loginb.click();
 		
 		
 	}
